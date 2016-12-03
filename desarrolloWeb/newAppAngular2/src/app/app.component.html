@@ -1,0 +1,18 @@
+<h1>
+  {{title}}
+</h1>
+<p [hidden]="!visible">
+	Adios
+</p>
+<button type="button" (click)="decirAdios()">Decir Adios</button>
+<p>
+	Como te llamas? <input type="text" [(ngModel)]="quien">
+</p>
+<p>Hola {{quien}}</p>
+
+<app-hola-mundo></app-hola-mundo>
+<hr>
+<app-boton-si-no></app-boton-si-no>
+<hr>
+<app-listado-preguntas></app-listado-preguntas>
+
